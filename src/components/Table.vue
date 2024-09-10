@@ -2,8 +2,7 @@
     <TableOptions
       @on-search="onSearchHandler"
       @mass-delete="massDeleteHandler"
-      :create-url="createUrl"
-      :create-fun="createFunData"
+      :create-fun="() => createFun()"
       :is-check-all="isCheckAll"
       @clear-check="clearCheckHandler">
     <template v-slot:filter>

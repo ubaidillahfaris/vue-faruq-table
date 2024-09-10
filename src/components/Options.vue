@@ -24,16 +24,6 @@
         </div>
       </div>
       <div class="flex space-x-4">
-        <Link
-            v-if="createUrl"
-            :href="createUrl"
-            class="inline-flex hover:bg-neutral-100 items-center px-3 py-2
-            text-neutral-700 hover:text-neutral-900 text-xs space-x-1
-            dark:focus:ring-blue-800 rounded-md"
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M11 13v3q0 .425.288.713T12 17t.713-.288T13 16v-3h3q.425 0 .713-.288T17 12t-.288-.712T16 11h-3V8q0-.425-.288-.712T12 7t-.712.288T11 8v3H8q-.425 0-.712.288T7 12t.288.713T8 13zm-6 8q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zM5 5v14z"/></svg>
-            <span class="">Create data</span>
-        </Link>
         <Button
             v-if="createFun"
             @click="createFun"
@@ -62,17 +52,12 @@
   </template>
   
   <script>
-  import {Link} from '@inertiajs/vue3'
   export default {
-    components:{
-        Link
-    },
     props: {
       isCheckAll: {
         type: Boolean,
         required: true,
       },
-      createUrl: String,
       createFun:{
         type:Function
       }
