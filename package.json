@@ -1,6 +1,6 @@
 {
   "name": "faruqtable",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/table.umd.js",
   "module": "dist/table.es.js",
